@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferta Especial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <img src="Logo.png" alt="Logo Plantão do TI" class="header-logo">
+  </header>
+
+  <main class="main-container">
+    <div class="offer-section">
+      <h2 class="offer-title">Oferta Imperdível!</h2>
+      <p class="offer-description">
+        Aproveite agora e garanta nosso PDF Extra com 
+        <span class="highlight">50% de desconto</span> (de R$ 14,90 por apenas R$ 7,45). Disponível por tempo limitado.
+      </p>
+
+      <div>
+        <cakto-upsell-buttons>
+          <cakto-upsell-accept
+            bg-color="#0f7865"
+            text-color="#ffffff"
+            offer-id="8cnLGmd"
+            app-base-url="https://app.cakto.com.br"
+            offer-type="upsell"
+            upsell-reject-url="members_area"
+            onclick="redirectToProduct()"
+          >
+            <span>Sim, quero aproveitar a oferta!</span>
+          </cakto-upsell-accept>
+          
+          <cakto-upsell-reject
+            upsell-reject-url="members_area"
+          >
+            <span>Não desejo aproveitar a oferta (o valor será reajustado para R$ 14,90).</span>
+          </cakto-upsell-reject>
+        </cakto-upsell-buttons>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Plantão do TI - Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function redirectToProduct() {
+      window.location.href = "https://pay.cakto.com.br/BfSescP";
+    }
+  </script>
+
+  <script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
+</body>
+</html>
