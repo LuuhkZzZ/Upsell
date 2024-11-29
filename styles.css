@@ -16,13 +16,12 @@
   
   .logo-container {
     text-align: center;
-    padding: 20px 0;
   }
   
   .logo {
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
     max-width: 120px;
     margin-left: auto;
     margin-right: auto;
@@ -106,7 +105,7 @@
     text-align: center;
     font-size: 10px;
     padding: 10px 0;
-    margin-top: auto;
+    margin-top: 20px;
   }
   
   .highlight {
@@ -117,8 +116,8 @@
   @media (max-width: 768px) {
     .logo {
       max-width: 120px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
     }
   
     .main-container {
@@ -139,12 +138,12 @@
   @media (max-width: 480px) {
     .logo {
       max-width: 100px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
     }
   
     .main-container {
-      padding: 10px;
+      padding: 20px;
     }
   
     .offer-title {
